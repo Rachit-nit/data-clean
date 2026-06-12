@@ -83,9 +83,9 @@ if file:
                 else:
                     df[columns_type_convert] = df[columns_type_convert].astype(target_type)
 
-                st.session_state.df = df  # Save back to state
+                st.session_state.df = df  
                 st.success(f"Successfully converted {columns_type_convert} to {target_type}")
-                st.rerun()  # Forces app to refresh UI with new types immediately
+                st.rerun()
             except Exception as e:
                 st.error("Could not convert data: The column might contain invalid characters.")
     else:
