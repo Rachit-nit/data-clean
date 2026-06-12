@@ -9,6 +9,7 @@ from streamlit import bar_chart
 def convert_df(dataframe):
     return dataframe.to_csv(index=False).encode('utf-8')
 
+st.title("**BytePolish**")
 st.title("Data cleaning")
 
 file = st.file_uploader("Upload a csv file to clean", type=["csv"])
@@ -149,7 +150,11 @@ if file:
             for key in list(st.session_state.keys()):
                 del st.session_state[key]
             st.rerun()
-
+            
+    with st.bottom:
+        st.divider()
+        st.caption("© 2026 BytePolish. All rights reserved.")
+        st.markdown("[GitHub] : https://github.com/Rachit-nit • [LinkedIn] : https://www.linkedin.com/in/rachit-saxena-25-/")
 
 
 else:
