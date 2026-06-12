@@ -1,8 +1,7 @@
 # 🧼 BytePolish
 
-[![Streamlit App](https://streamlit.io)](https://data-clean-visualise.streamlit.app/)
-[![Python Version](https://shields.io)](https://python.org)
-[![License: MIT](https://shields.io)](https://opensource.org)
+(https://streamlit.io)](https://data-clean-visualise.streamlit.app/)
+(https://shields.io)](https://python.org)
 
 An interactive data cleaning and type-safe analytics pipeline built with **Streamlit**, **Pandas**, and **Plotly**. This application features persistent session-state management, automated column-schema filtering, and memory-optimized UI downsampling to handle your data preparation workflows seamlessly.
 
